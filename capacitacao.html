@@ -1,0 +1,269 @@
+%%[
+ VAR @nome, @nome_cliente 
+ SET @nome = lookup("TB","Nome","Email",[Email address])
+ IF IndexOf(@nome ," ") > 1 THEN  
+ SET @nome_cliente = substring(@nome,1,subtract(IndexOf(@nome ," "),1))]   ELSE 
+ IF length(@nome) > 0 THEN
+ SET @nome_cliente = @nome ELSE 
+ SET @nome_cliente = "" endif endif]%%
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jornada do Cliente CK</title>
+   
+</head>
+<body bgcolor="white" text="#000000"  style="background-color: white; color: #000000; padding: 0px; -webkit-text-size-adjust: none; font-size: 16px; font-family: Arial, Helvetica, sans-serif;">
+    <div style="font-size: 0; line-height: 0;"></div>
+        <custom name="usermatch" type="tracking"></custom>
+        <custom name="opencounter" type="tracking"></custom>
+
+    <table bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" align="center" style="width: 660px; max-width: 660px; margin: auto; background-color: white;" width="660">
+        <tr>
+            <td align="left" valign="top">
+                <table width="660" cellspacing="0" cellpadding="0" cellborder="0" border="0" align="center">
+                    <tr>
+                        <td align="center" valign="middle">
+                            <img src="http://image.e.enext.com.br/lib/fe3a11717164047e771773/m/1/layout_ck_01.png" alt="" width="100%" border="0" async="true" style="display: block;">
+                        </td>
+                    </tr>
+                </table >
+            </td>
+        </tr>
+    </table>
+
+    <table bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" align="center" style="width: 660px; max-width: 660px; margin: auto; background-color: white;" width="660">
+        <tr>
+            
+        </tr>
+    </table>
+
+    
+    <table bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" align="center" style="width: 660px; max-width: 660px; margin: auto; background-color: white;" width="660">
+        <tr>
+            <td align="left" valign="top">
+                <table width="660" cellspacing="0" cellpadding="0" cellborder="0" border="0" align="center">
+                    <tr>
+                        <p style="font-family: Arial, Helvetica, sans-serif; color: #000000; font-size: 20pt; font-weight: bold; padding: 20pt 0pt 0pt 20pt;">
+                          Oi  %%[IF Length(@nome_cliente) > 0 then]%% %%=Propercase(@nome_cliente)=%%,%%[else]%%Cliente,%%[endif]%%
+                        </p>
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #000000; font-size: 17pt; padding: 0pt 0pt 0pt 20pt">
+                            Extra maciez e suavidade
+                        </p>
+                        <p style="font-family: Arial, Helvetica, sans-serif; color: #000000; font-size: 12pt; padding: 0pt 0pt 5pt 20pt;">
+                            Macia ao toque, respirável e extremamente confortável, a Lã Merino é uma fibra natural de alta qualidade que se adapta perfeitamente a qualquer estação. Além de oferecer brilho sutil e durabilidade excepcional, é uma escolha sustentável e biodegradável, reduzindo o impacto ambiental.
+                        </p>
+                        <p style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #000000; font-size: 17pt; padding: 0pt 0pt 0pt 20pt; ">
+                           <a href="https://www.calvinklein.com.br/la-merino" target="_blank" style="color: #000000;">Aproveite!</a> 
+                        </p>
+                    </tr>
+                </table >
+            </td>
+        </tr>
+    </table>
+
+    <table bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" align="center" style="width: 660px; max-width: 660px; margin: auto; background-color: white;" width="660">
+        <tr>
+            <td align="left" valign="top">
+                <table width="660" cellspacing="0" cellpadding="0" border="0" align="center">
+                    <tr>
+                        <td align="center" valign="middle">
+                            <a href="https://www.calvinklein.com.br/tricot-masculino-gola-careca-em-la-merino-calvin-klein_cafe_k10k109474_0780/p" target="_blank"><img src="http://image.e.enext.com.br/lib/fe3a11717164047e771773/m/1/layout_ck_04_link.png" alt="Adobe" width="100%" border="0" async="true" style="display: block;"><a>
+                        </td>
+                        <td align="center" valign="middle">
+                            <a href="https://www.calvinklein.com.br/vestido-feminino-midi-merino-calvin-klein_preto_k20k207491_0987/p" target="_blank"><img src="http://image.e.enext.com.br/lib/fe3a11717164047e771773/m/1/layout_ck_05_link.png" alt="Adobe" width="100%" border="0" async="true" style="display: block;"></a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <table bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" align="center" style="width: 660px; max-width: 660px; margin: auto; background-color: white;" width="660">
+        <tr>
+            <td align="left" valign="top">
+                <table width="660" cellspacing="0" cellpadding="0" border="0" align="center">
+                    <tr>
+                        <td align="center" valign="middle">
+                            <a href="https://www.calvinklein.com.br/tricot-feminino-gola-redonda-merino-calvin-klein_preto_k20k207452_0987/p" target="_blank"><img src="http://image.e.enext.com.br/lib/fe3a11717164047e771773/m/1/layout_ck_06_link.png" alt="Adobe" width="100%" border="0" async="true" style="display: block;"><a>
+                        </td>
+                        <td align="center" valign="middle">
+                            <a href="https://www.calvinklein.com.br/tricot-masculino-gola-careca-em-la-merino-calvin-klein_paprica_k10k109474_0430/p" target="_blank"><img src="http://image.e.enext.com.br/lib/fe3a11717164047e771773/m/1/layout_ck_07_link.png" alt="Adobe" width="100%" border="0" async="true" style="display: block;"></a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <table bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" align="center" style="width: 660px; max-width: 660px; margin: auto; background-color: white;" width="660">
+        <tr>
+            <td align="left" valign="top">
+                <table width="660" cellspacing="0" cellpadding="0" border="0" align="center">
+                    <tr>
+                        <td align="center" valign="middle">
+                            <a href="https://www.calvinklein.com.br/la-merino" target="_blank"><img src="http://image.e.enext.com.br/lib/fe3a11717164047e771773/m/1/layout_ck_08_link.png" alt="Adobe" width="100%" border="0" async="true" style="display: block;"></a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <table bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" align="center" style="width: 660px; max-width: 660px; margin: auto; background-color: white;" width="660">
+        <tr>
+            <td align="left" valign="top">
+                <table width="660" cellspacing="0" cellpadding="0" border="0" align="center">
+                    <tr>
+                        <td align="center" valign="middle">
+                            <a href="https://www.calvinklein.com.br/acessorios" target="_blank"><img src="http://image.e.enext.com.br/lib/fe3a11717164047e771773/m/1/layout_ck_09_link.png" alt="Adobe" width="100%" border="0" async="true" style="display: block;"></a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <table bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" align="center" style="width: 660px; max-width: 660px; margin: auto; background-color: white;" width="660">
+        <tr>
+            <td align="left" valign="top">
+                <table width="660" cellspacing="0" cellpadding="0" border="0" align="center">
+                    <tr>
+                        <td align="center" valign="middle">
+                            <img src="http://image.e.enext.com.br/lib/fe3a11717164047e771773/m/1/layout_ck_10.png" alt="Adobe" width="100%" border="0" async="true" style="display: block;">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <table bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" align="center" style="width: 660px; max-width: 660px; margin: auto; background-color: white;" width="660">
+        <tr>
+            <td align="left" valign="top">
+                <table width="660" cellspacing="0" cellpadding="0" border="0" align="center">
+                    <tr>
+                        <td align="center" valign="middle">
+                            <img src="http://image.e.enext.com.br/lib/fe3a11717164047e771773/m/1/layout_ck_11.png" alt="Adobe" width="100%" border="0" async="true" style="display: block;">
+                        </td>
+                        <td align="center" valign="middle">
+                            <a href="https://www.facebook.com/calvinkleinbrasil" target="_blank"><img src="http://image.e.enext.com.br/lib/fe3a11717164047e771773/m/1/layout_ck_12_link.png" alt="Adobe" width="100%" border="0" async="true" style="display: block;"></a>
+                        </td>
+                        <td align="center" valign="middle">
+                            <a href="https://www.instagram.com/calvinkleinbrasil/" target="_blank"><img src="http://image.e.enext.com.br/lib/fe3a11717164047e771773/m/1/layout_ck_13_link.png" alt="Adobe" width="100%" border="0" async="true" style="display: block;"></a>
+                        </td>
+                        <td align="center" valign="middle">
+                            <a href="https://www.youtube.com/@calvinklein" target="_blank"><img src="http://image.e.enext.com.br/lib/fe3a11717164047e771773/m/1/layout_ck_14_link.png" alt="Adobe" width="100%" border="0" async="true" style="display: block;"></a>
+                        </td>
+                        <td align="center" valign="middle">
+                            <img src="http://image.e.enext.com.br/lib/fe3a11717164047e771773/m/1/layout_ck_15.png" alt="Adobe" width="100%" border="0" async="true" style="display: block;">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <table bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" align="center" style="width: 660px; max-width: 660px; margin: auto; background-color: white;" width="660">
+        <tr>
+            <td align="left" valign="top">
+                <table width="660" cellspacing="0" cellpadding="0" border="0" align="center">
+                    <tr>
+                        <td align="center" valign="middle">
+                            <img src="http://image.e.enext.com.br/lib/fe3a11717164047e771773/m/1/layout_ck_16.png" alt="Adobe" width="100%" border="0" async="true" style="display: block;">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <table bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" align="center" style="width: 660px; max-width: 660px; margin: auto; background-color: white;" width="660">
+        <tr>
+            <td align="left" valign="top">
+                <table width="660" cellspacing="0" cellpadding="0" border="0" align="center">
+                    <tr>
+                        <td align="center" valign="middle">
+                            <a href="https://www.calvinklein.com.br/account#/profile?success=true" target="_blank"><img src="http://image.e.enext.com.br/lib/fe3a11717164047e771773/m/1/layout_ck_17_link.png" alt="Adobe" width="100%" border="0" async="true" style="display: block;"></a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <table bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" align="center" style="width: 660px; max-width: 660px; margin: auto; background-color: white;" width="660">
+        <tr>
+            <td align="left" valign="top">
+                <table width="660" cellspacing="0" cellpadding="0" border="0" align="center">
+                    <tr>
+                        <td align="center" valign="middle">
+                            <a href="https://www.calvinklein.com.br/nossas-lojas
+                            " target="_blank"><img src="http://image.e.enext.com.br/lib/fe3a11717164047e771773/m/1/layout_ck_18_link.png" alt="Adobe" width="100%" border="0" async="true" style="display: block;"></a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <table bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" align="center" style="width: 660px; max-width: 660px; margin: auto; background-color: white;" width="660">
+        <tr>
+            <td align="left" valign="top">
+                <table width="660" cellspacing="0" cellpadding="0" border="0" align="center">
+                    <tr>
+                        <td align="center" valign="middle">
+                            <a href="https://www.calvinklein.com.br/atendimento" target="_blank"><img src="http://image.e.enext.com.br/lib/fe3a11717164047e771773/m/1/layout_ck_19_link.png" alt="Adobe" width="100%" border="0" async="true" style="display: block;"></a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <table bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" align="center" style="width: 660px; max-width: 660px; margin: auto; background-color: white;" width="660">
+        <tr>
+            <td align="left" valign="top">
+                <table width="660" cellspacing="0" cellpadding="0" border="0" align="center">
+                    <tr>
+                        <td align="center" valign="middle">
+                            <a href="https://www.calvinklein.com.br/politica-de-privacidade" target="_blank"><img src="http://image.e.enext.com.br/lib/fe3a11717164047e771773/m/1/layout_ck_20_link.png" alt="Adobe" width="100%" border="0" async="true" style="display: block;"></a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+    <table bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" align="center" style="width: 660px; max-width: 660px; margin: auto; background-color: white;" width="660">
+        <tr>
+            <td align="left" valign="top">
+                <table width="660" cellspacing="0" cellpadding="0" border="0" align="center">
+                    <tr>
+                        <td align="center" valign="middle">
+                            <img src="http://image.e.enext.com.br/lib/fe3a11717164047e771773/m/1/layout_ck_21.png" alt="Adobe" width="100%" border="0" async="true" style="display: block;">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+<table bgcolor="#ffffff" cellpadding="0" cellspacing="0" border="0" align="center" style="width: 660px; max-width: 660px; margin: auto; background-color: white;" width="660">
+    <tr>
+        <td style="text-align: center;">
+            <table cellpadding="2" cellspacing="0" width="600" ID="Table5" Border=0 style="display: block; text-align: center;">
+                <tr>
+                    <td><font face="verdana" size="1" color="#444444">This email was sent by: <b>%%Member_Busname%%</b><br>%%Member_Addr%% %%Member_City%%, %%Member_State%%, %%Member_PostalCode%%, %%Member_Country%%<br><br></font>
+                    </td>
+                </tr>
+            </table>
+                <a href="%%profile_center_url%%" alias="Update Profile">Update Profile</a>
+                <a href="%%unsub_center_url%%" alias="Unsubscribe">Unsubscribe</a>
+        </td>
+    </tr>
+</table>
+</html>
